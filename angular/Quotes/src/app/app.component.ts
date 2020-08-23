@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Quote } from './quote';
-import { from } from 'rxjs';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,8 +8,10 @@ import { from } from 'rxjs';
 })
 export class AppComponent {
   quotes:Quote[]=[
-    { id: 1, name: 'J Cole', description: 'Love Yours' },
-    { id: 2, name: 'Bob Proctor', description: 'As a man thinketh so is he' },
-    { id: 2, name: 'Kevin Kruse', description: 'Life is about making impact' }
-  ];
+    {id:1, name:'As a man thinketh so is he'},
+    {id:2, name:'life is about making impact'},
+    { id: 3, name:'The way to get started is to quit talking and begin doing.'},
+    { id: 4, name: 'Life is what happens when you are busy making other plans'}
+  ]
+  
 }
