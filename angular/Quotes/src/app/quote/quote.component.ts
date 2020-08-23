@@ -15,6 +15,9 @@ export class QuoteComponent implements OnInit {
     new Quote( 3, 'The way to get started is to quit talking and begin doing', 'Walt Disney' ),
     new Quote( 4, 'Life is what happens when you are busy making other plans', 'John Lennon' )
   ];
+  toggleDetails(index) {
+    this.quotes[index].showDescription = !this.quotes[index].showDescription;
+  }
 
   constructor() { }
 
