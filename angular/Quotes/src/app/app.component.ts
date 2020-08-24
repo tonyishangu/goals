@@ -7,10 +7,10 @@ import { Quote } from './quote'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  quotes:Quote[] = [
-    { id: 1, name: 'As am thinketh so is he' },
-    { id: 2, name: 'Life is about making impact' },
-    { id: 3, name: 'The way to get started is to quit talking and begin doing' },
-    { id: 4, name: 'Life is what happens when you are busy making other plans' }
+  quotes: Quote[] = [
+    new Quote(1, 'As am thinketh so is he', 'Bob Proctor', 'Tony'),
+    new Quote(2, 'Life is about making impact', 'Kevin Kruse', 'Tony'),
+    new Quote(3, 'The way to get started is to quit talking and begin doing', 'Walt Disney', 'Tony'),
+    new Quote(4, 'Life is what happens when you are busy making other plans', 'John Lennon', 'Tony')
   ];
 }
